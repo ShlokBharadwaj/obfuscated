@@ -21,6 +21,9 @@ public class BrainFuckInterpreter {
                 case '+':
                     memory[pointer]++;
                     break;
+                case '-':
+                    memory[pointer]--;
+                    break;
             }
         }
     }
