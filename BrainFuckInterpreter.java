@@ -27,6 +27,11 @@ public class BrainFuckInterpreter {
                 case '.':
                     System.out.print((char) memory[pointer]);
                     break;
+                case ',':
+                    Scanner scanner = new Scanner(System.in);
+                    memory[pointer] = scanner.nextByte();
+                    scanner.close();
+                    break;
             }
         }
     }
