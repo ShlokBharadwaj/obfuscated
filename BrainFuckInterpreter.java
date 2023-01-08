@@ -15,7 +15,9 @@ public class BrainFuckInterpreter {
                 case '>':
                     pointer++;
                     break;
-                
+                case '<':
+                    pointer--;
+                    break;
             }
         }
     }
