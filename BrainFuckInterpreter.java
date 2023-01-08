@@ -18,6 +18,9 @@ public class BrainFuckInterpreter {
                 case '<':
                     pointer--;
                     break;
+                case '+':
+                    memory[pointer]++;
+                    break;
             }
         }
     }
