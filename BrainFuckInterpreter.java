@@ -11,7 +11,12 @@ public class BrainFuckInterpreter {
 
         for (int i = 0; i < exec.length(); i++) {
             char c = exec.charAt(i);
-            switch (c) {}
+            switch (c) {
+                case '>':
+                    pointer++;
+                    break;
+                
+            }
         }
     }
 }
