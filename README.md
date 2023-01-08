@@ -16,6 +16,11 @@ Brainfuck, for recreational programming challenge ofcourse.
 
 To change the BrainFuck program that is being interpreted, you can modify the `exec` string in the `main` method of the `BrainFuckInterpreter` class. Simply replace the existing program with your own BrainFuck code and save the file.
 
+## Notes
+
+- The interpreter uses a simple `byte` array to store the data for the BrainFuck program. The size of this array is set to 30001 by default, but it can be adjusted if necessary.
+- The interpreter does not include any error handling for invalid BrainFuck code, yet. If the program contains syntax errors or attempts to access invalid memory locations, it may produce unexpected results or crash.
+
 ## Troubleshooting
 
 If you encounter any errors or issues when running the interpreter, try the following:
