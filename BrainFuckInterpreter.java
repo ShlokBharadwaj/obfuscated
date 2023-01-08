@@ -8,6 +8,11 @@ public class BrainFuckInterpreter {
 
         byte[] memory = new byte[30001];
         int pointer = 0;
+
+        for (int i = 0; i < exec.length(); i++) {
+            char c = exec.charAt(i);
+            switch (c) {}
+        }
     }
 }
 
