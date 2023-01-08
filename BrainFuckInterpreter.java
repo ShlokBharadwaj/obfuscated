@@ -46,6 +46,20 @@ public class BrainFuckInterpreter {
                         }
                     }
                     break;
+                case ']':
+                    if (memory[pointer] != 0) {
+                        int count = 1;
+                        while (count > 0) {
+                            i--;
+                            char ch = exec.charAt(i);
+                            if (ch == ']') {
+                                count++;
+                            } else if (ch == '[') {
+                                count--;
+                            }
+                        }
+                    }
+                    break;
             }
         }
     }
