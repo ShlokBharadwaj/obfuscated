@@ -32,6 +32,20 @@ public class BrainFuckInterpreter {
                     memory[pointer] = scanner.nextByte();
                     scanner.close();
                     break;
+                case '[':
+                    if (memory[pointer] == 0) {
+                        int count = 1;
+                        while (count > 0) {
+                            i++;
+                            char ch = exec.charAt(i);
+                            if (ch == '[') {
+                                count++;
+                            } else if (ch == ']') {
+                                count--;
+                            }
+                        }
+                    }
+                    break;
             }
         }
     }
