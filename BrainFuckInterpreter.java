@@ -24,6 +24,9 @@ public class BrainFuckInterpreter {
                 case '-':
                     memory[pointer]--;
                     break;
+                case '.':
+                    System.out.print((char) memory[pointer]);
+                    break;
             }
         }
     }
