@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -5,13 +8,25 @@ public class BrainFuckInterpreter {
     public static void main(String[] args) {
 
         // String to be interpreted
-        String exec = "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.";
+        String string = "";
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("string.bf"));
+            String line = reader.readLine();
+            while (line != null) {
+                string += line;
+                line = reader.readLine();
+            }
+            reader.close();
+        } catch (IOException e) {
+            System.out.println("Error: Could not read the file");
+        }
 
         byte[] memory = new byte[30001];
         int pointer = 0;
         try {
-            for (int i = 0; i < exec.length(); i++) {
-                char c = exec.charAt(i);
+            for (int i = 0; i < string.length(); i++) {
+                char c = string.charAt(i);
                 switch (c) {
                     case '>':
                         pointer++;
@@ -38,7 +53,7 @@ public class BrainFuckInterpreter {
                             int count = 1;
                             while (count > 0) {
                                 i++;
-                                char ch = exec.charAt(i);
+                                char ch = string.charAt(i);
                                 if (ch == '[') {
                                     count++;
                                 } else if (ch == ']') {
@@ -52,7 +67,7 @@ public class BrainFuckInterpreter {
                             int count = 1;
                             while (count > 0) {
                                 i--;
-                                char ch = exec.charAt(i);
+                                char ch = string.charAt(i);
                                 if (ch == ']') {
                                     count++;
                                 } else if (ch == '[') {
