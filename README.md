@@ -19,7 +19,7 @@ To change the BrainFuck program that is being interpreted, you can modify the `e
 ## Notes
 
 - The interpreter uses a simple `byte` array to store the data for the BrainFuck program. The size of this array is set to 30001 by default, but it can be adjusted if necessary.
-- The interpreter does not include any error handling for invalid BrainFuck code, yet. If the program contains syntax errors or attempts to access invalid memory locations, it may produce unexpected results or crash.
+- ~~The interpreter does not include any error handling for invalid BrainFuck code, yet~~. If the program contains syntax errors or attempts to access invalid memory locations, it may produce unexpected results or crash.
 
 ## Troubleshooting
 
