@@ -6,11 +6,12 @@ Brainfuck, for recreational programming challenge ofcourse.
 
 ## Running the Interpreter
 
-1. Download the BrainFuckInterpreter.java file.
-2. Open a terminal or command prompt.
-3. Navigate to the directory where you saved the file.
-4. Compile the code using the following command: `javac BrainFuckInterpreter.java`
-5. Run the code using the following command: `java BrainFuckInterpreter`
+1. Clone the repository:
+```
+git clone git@github.com:ShlokBharadwaj/obfuscated.git
+```
+2. Compile the code using the following command: `javac BrainFuckInterpreter.java`
+3. Run the code using the following command: `java BrainFuckInterpreter`
 
 ## Modifying the Interpreter
 
