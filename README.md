@@ -1,7 +1,7 @@
 # obfuscated
 Brainfuck, for recreational programming challenge ofcourse.
 
-# Requirements
+## Requirements
 - java 8 or higher
 
 ## Running the Interpreter
@@ -14,7 +14,7 @@ Brainfuck, for recreational programming challenge ofcourse.
 
 ## Modifying the Interpreter
 
-To change the BrainFuck program that is being interpreted, you can modify the `exec` string in the `main` method of the `BrainFuckInterpreter` class. Simply replace the existing program with your own BrainFuck code and save the file.
+To change the BrainFuck program that is being interpreted, you can modify the `string.bf` file with your BrainFuck code. Simply replace the existing program with your own BrainFuck code and save the file.
 
 ## Notes
 
@@ -26,8 +26,8 @@ To change the BrainFuck program that is being interpreted, you can modify the `e
 If you encounter any errors or issues when running the interpreter, try the following:
 
 - Make sure you have the required version of Java installed on your system.
-- Check that the exec string in the `main` method of the `BrainFuckInterpreter` class contains valid BrainFuck code.
-- Check that the program string is properly formatted and that all brackets are properly balanced.
+- Check that the `string.bf` file contains valid BrainFuck code.
+- Check that the `string.bf` file is properly formatted and that all brackets are properly balanced.
 - If you are using a terminal or command prompt, make sure that you are in the correct directory and that you have the necessary permissions to run the program.
 
 If you continue to have issues, feel free to reach out for assistance.
